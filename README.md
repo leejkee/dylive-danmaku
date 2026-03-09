@@ -40,7 +40,7 @@
 1. 克隆本仓库到本地：
 
    ```bash
-   git clone <你的仓库地址>
+   git clone https://github.com/leejkee/dylive-danmaku.git
    cd dylive-danmaku
    ```
 
