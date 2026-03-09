@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "直播弹幕 Hook 抓取器",
+  "name": "Douyin danmaku tool",
   "version": "1.0",
-  "description": "通过 Hook 前端 JS 拦截并提取明文弹幕数据",
+  "description": "A Chrome extension to capture danmaku from Douyin live streams.",
   "permissions": [],
   "host_permissions": [
     "*://live.douyin.com/*"
@@ -12,7 +12,7 @@
   },
   "action": {
     "default_popup": "popup/popup.html",
-    "default_title": "弹幕抓取控制面板"
+    "default_title": "Douyin danmaku tool"
   },
   "content_scripts": [
     {
