@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>直播弹幕提取</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>测试面板</h2>
+
+    <div class="status-box">
+      当前状态: <span id="status">等待网页加载...</span>
+    </div>
+
+    <button id="toggleBtn">开启抓取</button>
+
+    <h3 style="font-size: 14px; margin-top: 15px; color: #4b5563">
+      实时数据预览
+    </h3>
+
+    <div id="danmakuList" class="danmaku-container">
+      <div class="empty-state" id="emptyState">暂无数据，请先开启抓取</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

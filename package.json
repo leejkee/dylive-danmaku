@@ -1,0 +1,23 @@
+{
+  "name": "dylive-danmaku",
+  "version": "0.1",
+  "description": "extension for douyin live danmaku",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node build.js --watch",
+    "build": "node build.js",
+    "pack": "pnpm run build && node scripts/pack.js"
+  },
+  "keywords": [],
+  "author": "leejkee",
+  "license": "ISC",
+  "packageManager": "pnpm@10.30.2",
+  "devDependencies": {
+    "@types/chrome": "^0.1.37",
+    "archiver": "^7.0.1",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "直播弹幕 Hook 抓取器",
+  "version": "1.0",
+  "description": "通过 Hook 前端 JS 拦截并提取明文弹幕数据",
+  "permissions": [],
+  "host_permissions": [
+    "*://live.douyin.com/*"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "弹幕抓取控制面板"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://live.douyin.com/*"
+      ],
+      "js": [
+        "content-scripts/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject-scripts/inject.js"
+      ],
+      "matches": [
+        "*://live.douyin.com/*"
+      ]
+    }
+  ]
+}
